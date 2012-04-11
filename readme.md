@@ -1,3 +1,3 @@
 This repository helps to increase awesomeness.
 
-![Example Image](https://github.com/AdilSoomro/Raised-Center-Tab-in-Android/blob/master/image.png)
+![Example Image](http://i.imgur.com/OZ3b8.png)
