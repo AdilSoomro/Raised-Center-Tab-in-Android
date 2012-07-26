@@ -31,8 +31,7 @@ public class AwesomeActivity extends TabActivity {
 	{
 		addTab("Home", R.drawable.tab_home, HomeActivity.class);
 		addTab("Search", R.drawable.tab_search, SearchActivity.class);
-//		addTab("	", R.drawable.tab_search, CameraActivity.class);
-		addRaisedCenterTab(CameraActivity.class);		
+		addTab("Fake", R.drawable.tab_search, SearchActivity.class);
 		addTab("Home", R.drawable.tab_home, HomeActivity.class);
 		addTab("Search", R.drawable.tab_search, SearchActivity.class);
 	}
@@ -50,17 +49,9 @@ public class AwesomeActivity extends TabActivity {
 		spec.setContent(intent);
 		tabHost.addTab(spec);
 	}
-	private void addRaisedCenterTab(Class<?> c)
+	public void openCameraActivity(View b)
 	{
-		Intent intent = new Intent(this, c);
-		TabHost.TabSpec spec = tabHost.newTabSpec("RaisedCenterTab");	
-		
-		View tabIndicator = LayoutInflater.from(this).inflate(R.layout.center_tab_indicator, getTabWidget(), false);
-//		ImageView icon = (ImageView) tabIndicator.findViewById(R.id.icon);
-//		icon.setImageResource(drawableId);
-		
-		spec.setIndicator(tabIndicator);
-		spec.setContent(intent);
-		tabHost.addTab(spec);
+		Intent intent = new Intent(this, CameraActivity.class);
+		startActivity(intent);
 	}
 }
