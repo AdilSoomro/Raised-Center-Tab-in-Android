@@ -1,4 +1,4 @@
-Android tabs at bottom!
+Android Tabs at Bottom and Raised Center
 ===================
 
 
